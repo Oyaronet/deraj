@@ -1,0 +1,72 @@
+{% extends "admindashboardlayout.html" %}
+{% block title %} Admin Dashboard {% endblock title %}
+
+{% block admindash %}
+ <div class="display-area mt-1">
+     <div class="container-fluid student-tab bg-danger">
+        <ul>
+            <li><button class="btn btn-danger">
+                <i class="fa fa-question" aria-hidden="true"></i>
+                <a href="#" id="add-student">Add New Questions</a>
+            </button></li>
+            <li><button class="btn btn-danger">
+                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                <a href="#" id="search-student">View Quizzes</a>
+            </button></li>
+            <li><button class="btn btn-danger">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                <a href="#" id="update-profiles">Update Question</a>
+            </button></li>
+        </ul>
+     </div>
+     <div class="card p-3 mt-0">
+         <form action="">
+             <h6 class="border-bottom pb-3">
+                <i class="fa fa-question" aria-hidden="true"></i>
+                Add New Question
+            </h6>
+            <div class="form-group">
+                 <select name="subject" id="subject" class="select-control">
+                    <option value="Select Subject" selected disabled>Select Subject</option>
+                    <option value="English">English</option>
+                    <option value="Maths">Maths</option>
+                    <option value="Kiswahili">Kiswahili</option>
+                    <option value="Chemistry">Science</option>
+                    <option value="Biology">Social Studies</option>
+                    <option value="Physics">CRE</option>
+                 </select>
+             </div>
+             <div class="form-group mt-1">
+                <label for="firstname" class="label">Question:</label>
+                <textarea name="question" id="" cols="30" rows="2" class="form-control"></textarea>
+             </div>
+             <div class="form-group">
+                <label for="answera" class="label">Answer A:</label>
+                <input type="text" class="form-control" id="answera" required placeholder="Answer A">
+             </div>
+             <div class="form-group">
+                <label for="answerb" class="label">Answer B:</label>
+                <input type="text" class="form-control" id="answerb" required placeholder="Answer B">
+             </div>
+             <div class="form-group">
+                <label for="answerc" class="label">Answer C:</label>
+                <input type="text" class="form-control" id="answerc" required placeholder="Answer C">
+             </div>
+             <div class="form-group">
+                <label for="answerd" class="label">Answer D:</label>
+                <input type="text" class="form-control" id="answerd" required placeholder="Answer D">
+             </div>
+             <select name="correct-answer" id="" class="select-group">
+                <option value="Select Correct Answer" selected disabled>Select Correct Answer</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+             </select>
+             <div class="d-grid mt-2">
+                <input type="submit" class="btn btn-danger" value="Save">
+             </div>
+         </form>
+     </div>
+ </div>
+{% endblock admindash %}

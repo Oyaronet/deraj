@@ -1,0 +1,110 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* border: red solid 2px; */
+    min-height: 100vh;
+    /* background-color: #ececec; */
+}
+
+.bg-custom {
+    background: #CF6650;
+}
+
+.header {
+    text-align: end;
+    font-family: cursive;
+}
+
+.login-form {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.height {
+    height: 79vh;
+}
+
+.b {
+    border-bottom: solid 2px #CF6650;
+    padding-bottom: 2px;
+    /* background-color: #ececec; */
+}
+
+.height-2 {
+    height: 69vh;
+    background-color: #ececec;
+}
+.card-height {
+    height: 200px;
+}
+
+.display-7 {
+    font-size: 32px;
+}
+
+.profile-pic {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-top: 15px;
+    background-color: rgb(120, 119, 118);
+}
+
+.profile > ul {
+    list-style-type: none;
+}
+
+.profile > ul > li > a {
+    text-decoration: none;
+}
+
+.mt-7 {
+    margin-top: 100px;
+}
+
+.display-cards > .card {
+    width: 300px;
+    height: 154px;
+    border-bottom: solid 2px #CF6650;
+    margin-left: 10px;
+}
+
+.border-left {
+    border-left: gray solid 1px;
+    padding-left: 2px;
+    font-size: 10px;
+    /* width: 100px; */
+}
+
+.link-labels {
+    margin-left: 10px;
+}
+
+.student-tab {
+    border-radius: 5px;
+}
+
+.student-tab ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.student-tab ul > li {
+    margin-left: 5px;
+    border-right: solid gray 1px;
+}
+
+.student-tab ul > li a {
+    text-decoration: none;
+    color: white;
+}
+
+.ml {
+    margin-left: 10px;
+}

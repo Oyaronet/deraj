@@ -1,0 +1,33 @@
+{% extends "admindashboardlayout.html" %}
+{% block title %} Admin Dashboard {% endblock title %}
+{% block admindash %}
+<div class="display-cards mt-3 ml-2" style="display:flex">
+    <div class="card">
+        <h4 class="text-center mt-2 border-bottom pb-2">Students 
+            <span class=""><i class="fa fa-users" aria-hidden="true"></i></span>
+        </h4>
+        <h1 class="text-center mt-2">
+             <span class="display-6 text-info fw-bold">57</span>
+        </h1>
+        <small class="mt-1 text-center p-2 text-muted">No of students in the System</small>
+    </div>
+    <div class="card">
+        <h4 class="text-center mt-2 border-bottom pb-2">Questions 
+            <span class=""><i class="fa fa-book" aria-hidden="true"></i></span>
+        </h4>
+        <h1 class="text-center mt-2">
+             <span class="display-6 text-info fw-bold">458</span>
+        </h1>
+        <small class="mt-1 text-center p-2 text-muted">No of Questions in the System</small>
+    </div>
+    <div class="card">
+        <h4 class="text-center mt-2 border-bottom pb-2">Teachers 
+            <span class=""><i class="fa fa-female" aria-hidden="true"></i></span>
+        </h4>
+        <h1 class="text-center mt-2">
+             <span class="display-6 text-info fw-bold">11</span>
+        </h1>
+        <small class="mt-1 text-center p-2 text-muted">No of Teachers in the System</small>
+    </div>
+</div>
+{% endblock admindash %}

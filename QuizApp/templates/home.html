@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+{% block title %} Student Login {% endblock title %}
+{% block nav %}
+<ul class="navbar-nav text-center ms-auto">
+    <li>
+        <a href="{{ url_for('home') }}" class="nav-link">
+            <i class="fa fa-user-circle" aria-hidden="true"></i> Login
+        </a>
+    </li>
+    <li>
+        <a href="{{ url_for('admin_login') }}" class="nav-link">
+            <i class="fa fa-lock" aria-hidden="true"></i> Admin
+        </a>
+    </li>
+    <li><a href="#" class="nav-link">About us</a></li>
+    <li>
+        <a href="#" class="nav-link"><i class="fa fa-phone" aria-hidden="true"></i> Contacts</a>
+    </li>
+</ul>
+{% endblock nav %}
+{% block body %}
+<div>
+    <div class="login-form card p-4">
+        <form action="">
+            <h5 class="border-bottom pb-3">
+                Student Login
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+            </h5>
+            {{ form.hidden_tag() }}
+            <fieldset>
+                <div class="form-group">
+                    {{ form.username.label(class="label") }}
+                    {{ form.username(class="form-control", placeholder="John") }}
+                </div>
+                <div class="form-group">
+                    {{ form.password.label(class="label") }}
+                    {{ form.password(class="form-control", placeholder="****") }}
+                </div>
+                <div class="d-grid gap-2 mt-2">
+                    {{ form.login(class="btn btn-danger") }}
+                </div>
+                <small class="text-muted mt-2">Forgot password? Click <a href="#">here</a></small>
+            </fieldset>
+        </form>
+    </div>
+</div>
+{% endblock body %}

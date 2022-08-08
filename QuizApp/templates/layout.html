@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+    </head>
+    <body>
+        <div class="container-fluid bg-custom">
+            <div class="container">
+                 <nav class="navbar navbar-expand-md navbar-dark">
+                    <a href="#" class="navbar-brand">
+                        <img src="{{ url_for('static', filename='images/logo.PNG') }}" 
+                        width="80" height="80" alt="logo">
+                       <span class="fw-bold display-7">Elimu App<span class="text-warning">&TRADE;</span></span>
+                    </a>
+                    <button
+                        type="button"
+                        class="navbar-toggler"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#toggleMobileMenu"
+                        aria-control="toggleMobileMenu"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                        {% block nav %} {% endblock nav %}
+                    </div>
+                 </nav>
+            </div>
+        </div>
+        <div class="container bg-light height">
+             <h6 class="header border-bottom pb-2">Online Learning is the Future</h6>
+             {% block body %} {% endblock body %}
+        </div>
+        <div class="container">
+            <h6 class="text b">SoftLimited &COPY;2022</h6>
+        </div>
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    </body>
+</html>
